@@ -128,31 +128,9 @@ function App() {
                 </div>
               </div>
             </div>
-
-            {/* Social Proof */}
-            <div className="flex items-center gap-6 pt-4">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div 
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-amber-900 bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center text-amber-100 font-bold"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-amber-300 text-sm mt-1">
-                  <span className="font-bold">487</span> royal families served since 1857
-                </p>
-              </div>
-            </div>
           </div>
+
+
 
           {/* Right Column - Signup Card */}
           <div className="relative">
