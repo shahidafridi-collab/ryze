@@ -3,6 +3,20 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+// export default defineConfig({
+//   plugins: [react(),tailwindcss()],
+// })
+
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'], // Add a premium font
+      },
+    },
+  },
   plugins: [react(),tailwindcss()],
-})
+}
